@@ -5,7 +5,7 @@ import requests
 app = FastAPI()
 
 DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"
-DEEPSEEK_API_KEY = os.getenv("sk-51f4a966328c4117b4effb7552b124e1")
+DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
 
 @app.post("/")
 async def main(request: Request):
